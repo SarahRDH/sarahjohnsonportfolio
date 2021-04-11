@@ -1,0 +1,195 @@
+/*colors rgb(126,202,194) lt blue
+rgb(113, 189, 172) lt aqua
+rgb(246,208,117) dk yellow
+rgb(172,162,158) dk gray
+rgb(141,208,169) dk green
+rgb(216,244,203) lt green
+rgb(117,73,103) purple
+#dddfd4 gray
+#fae596 yellow
+#3fb0ac lt teal
+#173e43 dk teal almost black
+
+font style Alata, from fontsquirrel
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* begin custom css */
+
+html {
+    font-family: 'Alata', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fae596;
+    border-bottom: 3px solid rgb(172,162,158);
+    padding: 5px; 0px;
+}
+
+header p {
+    font-size: 30px;
+    padding-left: 50px;
+    color: rgb(117,73,103);
+}
+/* hamburger menu for mobile */
+.hamburger {
+    height: 50%;
+    width: 0px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+    background-color: rgb(117,73,103);
+    color: white;
+    padding: 5% 0px;
+}
+
+.close {
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+}
+
+.hamburger ul {
+    list-style: none;
+    width: 250px;
+}
+
+.hamburger a {
+    color: white;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+svg {
+    padding-right: 50px;
+}
+
+/*body*/
+body {
+    background-color: #dddfd4;
+}
+
+h1 {
+    color: rgb(117,73,103);
+    font-size: 30px;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-size: 24px;
+    color: #173e43;
+}
+
+.circles {
+    max-width: 100%;
+}
+
+.projects-circle {
+    background-color: rgb(141,208,169);
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: -1px 3px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hire-me-circle {
+    background-color: rgb(141,208,169);
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: -1px 3px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bio-circle {
+    background-color: rgb(141,208,169);
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: -1px 3px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education-circle {
+    background-color: rgb(141,208,169);
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: -1px 3px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.languages-circle {
+    background-color: rgb(141,208,169);
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    box-shadow: -1px 3px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
