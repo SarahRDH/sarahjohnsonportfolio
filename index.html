@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/ee32189bb5.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,180 +11,221 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">    
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
     <title>Sarah's Portfolio</title>
 </head>
 
   <body>
   <header>
-    <p>SARAH'S PORTFOLIO</p>
+    <p class="header-text"><a href="#top-nav">SARAH'S PORTFOLIO</a></p>
     <nav class="navigation">
-        <svg viewBox="0 0 100 80" width="40" height="40">
-            <rect width="100" height="16"></rect>
-            <rect y="30" width="100" height="16"></rect>
-            <rect y="60" width="100" height="16"></rect>
+        <svg viewBox="0 0 100 80" width="30" height="30">
+            <rect width="100" height="8"></rect>
+            <rect y="30" width="100" height="9"></rect>
+            <rect y="60" width="100" height=10></rect>
         </svg>
     <nav class="hamburger">
         <a href="#" class="close">&times;</a>
       <ul>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Languages</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Bio</a></li>
-        <li><a href="#">Hire Me</a></li>
+        <li><a href="#project-nav">Projects</a></li>
+        <li><a href="#languages-nav"> Tools and Languages</a></li>
+        <li><a href="#education-nav">Education</a></li>
+        <li><a href="#bio-nav">Bio</a></li>
+        <li><a href="#hire-nav">Hire Me</a></li>
       </ul>
     </nav>
     </nav>
   </header>
-
-    <h1>Hi! I'm Sarah Johnson, a front end developer in Los Angeles.</h1>
+    <div class ="lines">
+      <hr class="oblique">
+      <hr class="horizontal">
+    </div>
+    <div class="headline" id="top-nav">
+      <h1>I'm <span class="name">Sarah Johnson</span>, a front end developer in Los Angeles.</h1>
+    </div>
     <div class="circles">
-      <div class="projects-circle">
-        <h2>PROJECTS</h2>
+      <div class="projects-circle circle">
+        <a href="#project-nav"><h2>PROJECTS</h2></a>
       </div>
-      <div class="hire-me-circle">
-        <h2>HIRE ME</h2>
+      <div class="hire-me-circle circle">
+        <a href="#hire-nav"><h2>HIRE ME</h2></a>
       </div>
-      <div class="bio-circle">
-        <h2>BIO</h2>
+      <div class="bio-circle circle">
+        <a href="#bio-nav"><h2>BIO</h2></a>
       </div>
-      <div class="education-circle">
-        <h2>EDUCATION</h2>
+      <div class="education-circle circle">
+        <a href="#education-nav"><h2>EDUCATION</h2></a>
       </div>
-      <div class="languages-circle">
-        <h2>TOOLS AND LANGUAGES</h2>
+      <div class="languages-circle circle">
+        <a href="#languages-nav"><h2>TOOLS<br>AND<br>LANGUAGES</h2></a>
       </div>
     </div>
-   
+<div class="background-art">   
     <main>
-       <hr>
-       <h3>Tools and Languages</h3>
+      <div class= "languages-wrapper"> 
+     <h3 id="languages-nav">Tools and Languages</h3>
       <section class="languages">
         <div class="html">
-          <h4>HTML</h4>
+          <i class="fab fa-html5"></i><h4>HTML</h4>
         </div>
         <div class="css">
+          <i class="fab fa-css3-alt"></i>
           <h4>CSS</h4>
         </div>
         <div class="js">
+          <i class="fab fa-js"></i>
           <h4>JavaScript</h4>
         </div>
         <div class="cl">
+          <i class="fas fa-terminal"></i>
           <h4>Command Line</h4>
         </div>
         <div class="github">
+          <i class="fab fa-github"></i>
           <h4>GitHub</h4>
         </div>
         <div class="asana">
+          <i class="fas fa-tasks"></i>
           <h4>Asana</h4>
         </div>
         <div class="figma">
+          <i class="fab fa-figma"></i>
           <h4>Figma</h4>
         </div>
         <div class="pencil-paper">
+          <i class="fas fa-edit"></i>
           <h4>Pencil & Paper</h4>
         </div>
-      </section>
-       <hr>
-      <h3>Projects</h3>
-      <section class="projects">
-        <div class="projects-background">
-          <div class="project p1"><iframe></iframe>
-          </div>
-          <div class="project p2"><iframe></iframe>
-          </div>
-          <div class="project p3"><iframe></iframe>
-          </div>
-          <div class="project p4"><iframe></iframe>
-          </div>
-          <div class="project p5"><iframe></iframe>
-          </div>
-          <div class="project p6"><iframe></iframe>
-          </div>          
         </div>
       </section>
-        <hr>
-      <h3>Education</h3>
+      
+      <h3 id="project-nav">Projects</h3>
+        <div class="projects-background">
+        </div>
+          <section class="projects">
+          <div class="project p1"><a href="https://codepen.io/sarahrdh/full/eYBbJbK" target="_blank" alt="Sarah's project"><img src="https://www.dropbox.com/s/z3dell70vhgbgkq/airbnb-recreation.jpeg?raw=1"/></a>
+          </div>
+          <div class="project p2"><a href="https://codepen.io/sarahrdh/full/oNYPeRY" target="_blank" alt="Sarah's project"><img src="https://www.dropbox.com/s/90r45l9pnrb9l0q/recreation-of-fake-homepage.jpeg?raw=1"/></a>
+          </div>
+          <div class="project p3"><a href="https://codepen.io/sarahrdh/full/jOVgbPM" target="_blank" alt="Sarah's project"><img src="https://www.dropbox.com/s/fe0x6cymcd90e4w/modal-for-trulia.jpeg?raw=1"/></a>
+          </div>
+          <div class="project p4"><a href="#" target="_blank"><div class="coming-soon">
+
+  <p>More projects coming soon!<p>
+
+</div>
+</a>
+          </div>
+          <div class="project p5"><a href="#" target="_blank"><div class="coming-soon">
+
+  <p>More projects coming soon!<p>
+
+</div></a>
+          </div>
+          <div class="project p6"><a href="#" target="_blank"><div class="coming-soon">
+
+  <p>More projects coming soon!<p>
+
+</div></a>
+          </div>          
+      </section>
+        
+      <h3 id="education-nav">Education</h3>
       <section class="education">
         <div class="edu-block-1">
-           <img src="#"/>
+          
           <h4>Michigan State University</h4>
           <p>Human Biology</p>
-          <p>B.S.</p> 
+          <p>B.S.<br>GPA 3.3421</p> 
         </div>
         <div class="edu-block-2">
-          <img src="#"/>
+          
           <h4>Roane State Community College</h4>
           <p>Dental Hygiene</p>
-          <p>A.A.S.</p>        
+          <p>A.A.S.<br>Magna Cum Laude</p>        
         </div>
          <div class="edu-block-3">
-           <img src="#"/>
+         
           <h4>General Assembly</h4>
           <p>Front End Web Development</p>
           <p>Certificate in Progress</p>      
         </div>
          <div class="edu-block-4">
-          <img src="#"/>
+          
           <h4>Codecademy</h4>
           <p>HTML</p>
           <p>Certificate</p>
         </div>
          <div class="edu-block-5">
-           <img src="#"/>
+           
           <h4>Codecademy</h4>
           <p>CSS</p>
           <p>Certificate</p>      
         </div>
          <div class="edu-block-6">
-            <img src="#"/>
+            
           <h4>Codecademy</h4>
           <p>Command Line</p>
           <p>Certificate</p>      
         </div>
          <div class="edu-block-7">
-           <img src="#"/>
+           
           <h4>Codecademy</h4>
           <p>JavaScript</p>
           <p>Certificate in Progress</p>          
         </div>
          <div class="edu-block-8">
-       <img src="#"/>
+       
           <h4>HarvardX</h4>
           <p>CS50</p>
           <p>Certificate in Progress</p>  
         </div>
          <div class="edu-block-9">
-          <img src="#"/>
+          
           <h4>Udemy</h4>
           <p>JavaScript, Bootstrap, React, Angular, NodeJS, NextJS, REST API, PHP, Python, Django</p>
           <p>Education in Progress</p>
         </div>
       </section>
       
-       <hr>
-      <h3>Bio</h3>
+       
+     <h3 id="bio-nav">Bio</h3>
       <section class="bio">
         <div class="bio-background-1">
-        </div>
-        <img src = "#" alt=""/>
-        <hr>
-        <p>I'm Sarah Johnson, a front end web developer in Los Angeles. When the planet shut down in 2020, I could no longer work as a dental hygienist, myofunctional therapist, and continuing education lecturer. I've tinkered with markup languages off and on for years, maintaining three websites for my corporation and a non-profit. Thanks to the pandemic, I had time to dive into CS and web development and turn my hobby into a career. I love the challenge of meticulously recreating a designer's ideas into functional, interactive, and responsive sites. Though I would happily code on my mac 24/7, I do take time to hike, paddleboard, bike along the beach, bake sweets, and play Butter Royale. I'm a dog lover with a knack for details and a penchant for craft cocktails and good food.</p>
+        
+        <img src = "https://www.dropbox.com/s/0mfz1kobay1vf9n/IMG_0042.jpeg?raw=1" alt="pic of Sarah"/>
+        <hr class = "hr-1">
+          </div>
+        <p>I'm Sarah Johnson, a front end web developer in Los Angeles. When the planet shut down in 2020, I could no longer work as a dental hygienist, myofunctional therapist, and continuing education lecturer. I've tinkered with markup languages off and on for years, maintaining three websites for my corporation and a non-profit. Thanks to the pandemic, I had time to dive into CS and web development and turn my hobby into a career. Though I would happily code on my mac 24/7, I do take time to hike, paddleboard, bike along the beach, bake sweets, and play Butter Royale. I'm a dog lover with a knack for details and a penchant for craft cocktails and good food.</p>
         <div class="bio-background-2">
+        
+        <hr class="hr-2">
+        <img src = "https://www.dropbox.com/s/wt3rhrlteiiigxs/IMG_1369.jpeg?raw=1" alt="Sarah rock climbing" class="pic-2"/><aside>Rock climbing in Joshua Tree</aside>
         </div>
-        <img src = "#" alt=""/><aside>Enjoying the great outdoors</aside>
-        <hr>
       </section>
-       <hr>
-      <h3>Hire Me</h3>
+    
+      <h3 id="hire-nav">Hire Me</h3>
       <section class="hire">
-        <button>Contact</button>
-        <a href="#"><i class="fa fa-print" alt="print-resume"></i></a>
-        <a href="#"><i class="fa fa-linkedin" alt="linkedin"></i></a>
-        <a href="#"><i class="fa fa-github" alt="github"></i></a>
+        <a href="mailto:sarahjohnsonrdh@gmail.com" target="_blank" alt="email Sarah"><button>Contact</button></a>
+      <div class="contact-favicons">  
+      <a href="https://www.linkedin.com/in/sarah-johnson-84bb3ba3" alt="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/SarahRDH" alt="github" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.dropbox.com/s/ips8np69hresqok/Sarah%20Johnson%20resume%20updated.pdf"alt="resume" target="_blank"><i class="fas fa-file"></i></a>
+        </div>
+        
+
+
+
       </section>
     </main>
     <footer>
-      <p>2021 Designed and Built by Sarah Johnson</p>
+      <a href="#top-nav"><p>Top</p></a>
+      <p class="sig">2021 Designed and Built by Sarah Johnson</p>
     </footer>
-  </body>  
+  </div>
+  </body> 
+  
 </html>
