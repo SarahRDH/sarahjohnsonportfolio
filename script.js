@@ -1,15 +1,16 @@
 const hamburgerIcon = document.querySelector("svg");
 const hamburgerDrop = document.querySelector(".hamburger");
 const closeBtn = document.querySelector(".close");
+const darkOverlay = document.querySelector(".overlay");
 
 function handleMenuClick() {
     hamburgerDrop.style.width = "250px";
-
+    darkOverlay.style.display = "block";
 }
 
 function handleSideNavClose() {
     hamburgerDrop.style.width = "0px";
-
+    darkOverlay.style.display = "none";
 }
 
 hamburgerIcon.addEventListener("mouseover", handleMenuClick);

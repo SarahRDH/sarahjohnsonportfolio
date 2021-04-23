@@ -127,6 +127,19 @@ header p {
 svg {
     padding-right: 30px;
 }
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1; 
+}
 /*end hamburger menu*/
 
 .headline {
@@ -942,6 +955,17 @@ button {
   padding: 10px 35px;
   margin-bottom: 20px;
 }
+.button-change {
+  font-size: 25px;
+  transition: font-size 1s ease-in-out;
+}
+.button-change:hover {
+  font-size: 28px;
+}
+button:active {
+  outline: 0;
+}
+
 
 
 .contact-favicons {
@@ -957,21 +981,21 @@ button {
   color: black; 
   border-radius: 100%;
   border: 2px solid rgba(113, 189, 172, .8);
-  animation-name: active-border;
-  animation-duration: 2.5s;
-  animation-timing-function: ease-in-out;
+  
+  /* animation-timing-function: ease-in-out; */
 }
 /* favicon animation not working yet
  */
 @keyframes active-border {
-  from {border: 4px solid rgba(113, 189, 172);}
-  to {border: 2px solid rgba(white)}
-  to {border: 2px solid rgba(113, 189, 172, .8)}
+  from {border: 2px solid white;}
+  to {border: 2px solid rgb(141,208,169);}
+  to {border: 2px solid rgba(1, 46, 36, 0.8);}
+  /* to {border: 2px solid rgba(113, 189, 172, .8)} */
 }
 .contact-favicons a i:hover{
-    animation: active-border;
-    animation-play-state: running;
-    cursor: pointer;
+  animation-name: active-border;
+  animation-duration: 3.5s;
+  cursor: pointer;
     
     }
 /* end animation */
