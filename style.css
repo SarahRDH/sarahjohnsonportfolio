@@ -61,6 +61,7 @@ a {
 
 html {
     font-family: 'Alata', sans-serif;
+    scroll-behavior: smooth;
 }
 p {
    font-family: 'Montserrat', sans-serif;
@@ -723,6 +724,10 @@ main {
   to {width: 60%; transform: translateX(-500px); background-color: white;}
   to {width: 60%; transform: translateX(-300px); background-color: white;}
   to {width: 3%; transform: translateX(-200px); background-color: rgba(255,255,255,0.5);}
+}
+
+.hidden {
+  opacity: 0;
 }
 /* .contact-favicons a i:hover{
   animation-name: active-border;
