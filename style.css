@@ -222,8 +222,30 @@ body {
   width: 120vw;
   height: 0.25px;
   background-color: white;
-   
+  /* animation: sideways 3s ease-out; */
 }
+/* @keyframes line-grow {
+  from {width: 5vw;}
+  to {width: 60vw;}
+  to {width: 120vw;}
+} */
+/* .contact-favicons a i:hover{
+  animation-name: active-border;
+  animation-duration: 2s;
+  cursor: pointer;
+    
+    } */
+/* @keyframes sideways {
+  0% {
+    width: 5vw;
+  }
+  50% {
+    width: 50vw;
+  }
+  100% {
+    width: 120vw;
+  }
+} */
 
 .horizontal {
   transform: translateY(190px);
@@ -721,13 +743,7 @@ main {
   border-radius: 10px;
   background-color: white;
 }
-
-/* .languages h3 {
-  color: white;
-  border: 2px solid rgb(246,208,117);
-  padding: 5px 3px;
-  background-color: #fae596;
-} */
+ 
 
 .languages div {
   display: flex;
@@ -949,7 +965,7 @@ button {
   background-color: #fae596;
   color: rgb(117,73,103);
   font-size: 25px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
   border-bottom: 4px solid rgb(246,208,117);
   padding: 10px 35px;
@@ -959,9 +975,11 @@ button {
   font-size: 25px;
   transition: font-size 1s ease-in-out;
 }
-.button-change:hover {
-  font-size: 28px;
+
+button:hover {
+  cursor: pointer;
 }
+
 button:active {
   outline: 0;
 }
@@ -975,26 +993,24 @@ button:active {
 }
 
 .contact-favicons a i {
-  padding: 20px 20px;
-  margin: 30px 15px;
+  padding: 25px 25px;
+  margin: 30px 25px;
   font-size: 20px;
-  color: black; 
+  color: rgb(83, 80, 78); 
   border-radius: 100%;
   border: 2px solid rgba(113, 189, 172, .8);
   
   /* animation-timing-function: ease-in-out; */
 }
-/* favicon animation not working yet
- */
+
 @keyframes active-border {
   from {border: 2px solid white;}
   to {border: 2px solid rgb(141,208,169);}
   to {border: 2px solid rgba(1, 46, 36, 0.8);}
-  /* to {border: 2px solid rgba(113, 189, 172, .8)} */
 }
 .contact-favicons a i:hover{
   animation-name: active-border;
-  animation-duration: 3.5s;
+  animation-duration: 2s;
   cursor: pointer;
     
     }
