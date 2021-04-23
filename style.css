@@ -164,7 +164,7 @@ h1 {
 h1 {
   margin-left: 5px;
 }
-}
+
 
 h2, h3 {
     font-size: 24px;
@@ -174,9 +174,9 @@ h2, h3 {
 
 h3 {
   
-  margin: 80px 20px 20px 20px;
+  margin: 80px 20px 0px 20px;
   padding-top: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   font-size: 40px;
   font-family: 'Kalam', cursive;
   color: white;
@@ -222,30 +222,7 @@ body {
   width: 120vw;
   height: 0.25px;
   background-color: white;
-  /* animation: sideways 3s ease-out; */
 }
-/* @keyframes line-grow {
-  from {width: 5vw;}
-  to {width: 60vw;}
-  to {width: 120vw;}
-} */
-/* .contact-favicons a i:hover{
-  animation-name: active-border;
-  animation-duration: 2s;
-  cursor: pointer;
-    
-    } */
-/* @keyframes sideways {
-  0% {
-    width: 5vw;
-  }
-  50% {
-    width: 50vw;
-  }
-  100% {
-    width: 120vw;
-  }
-} */
 
 .horizontal {
   transform: translateY(190px);
@@ -732,6 +709,40 @@ main {
 /* h3 {
   padding: 20px 0px;
 } */
+
+.titles {
+  padding-top: 0px;
+  background-color: transparent;
+  width: 0%;
+  height: 1px;
+  margin-bottom: 40px;
+  animation: line-grow 1.5s ease-in-out alternate;
+}
+@keyframes line-grow {
+  from {width: 100%; transform: translateX(-800px); background-color: white;}
+  to {width: 60%; transform: translateX(-500px); background-color: white;}
+  to {width: 60%; transform: translateX(-300px); background-color: white;}
+  to {width: 3%; transform: translateX(-200px); background-color: rgba(255,255,255,0.5);}
+}
+/* .contact-favicons a i:hover{
+  animation-name: active-border;
+  animation-duration: 2s;
+  cursor: pointer;
+    
+    } */
+/* @keyframes sideways {
+  0% {
+    width: 5vw;
+  }
+  50% {
+    width: 50vw;
+  }
+  100% {
+    width: 120vw;
+  }
+} */
+
+
 
 /*languages section*/
 .languages {
