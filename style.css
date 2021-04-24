@@ -61,6 +61,7 @@ a {
 
 html {
     font-family: 'Alata', sans-serif;
+    scroll-behavior: smooth;
 }
 p {
    font-family: 'Montserrat', sans-serif;
@@ -127,6 +128,19 @@ header p {
 svg {
     padding-right: 30px;
 }
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1; 
+}
 /*end hamburger menu*/
 
 .headline {
@@ -151,7 +165,7 @@ h1 {
 h1 {
   margin-left: 5px;
 }
-}
+
 
 h2, h3 {
     font-size: 24px;
@@ -161,9 +175,9 @@ h2, h3 {
 
 h3 {
   
-  margin: 80px 20px 20px 20px;
+  margin: 80px 20px 0px 20px;
   padding-top: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   font-size: 40px;
   font-family: 'Kalam', cursive;
   color: white;
@@ -209,7 +223,6 @@ body {
   width: 120vw;
   height: 0.25px;
   background-color: white;
-   
 }
 
 .horizontal {
@@ -698,6 +711,44 @@ main {
   padding: 20px 0px;
 } */
 
+.titles {
+  padding-top: 0px;
+  background-color: transparent;
+  width: 0%;
+  height: 1px;
+  margin-bottom: 40px;
+  animation: line-grow 1.5s ease-in-out alternate;
+}
+@keyframes line-grow {
+  from {width: 100%; transform: translateX(-800px); background-color: white;}
+  to {width: 60%; transform: translateX(-500px); background-color: white;}
+  to {width: 60%; transform: translateX(-300px); background-color: white;}
+  to {width: 3%; transform: translateX(-200px); background-color: rgba(255,255,255,0.5);}
+}
+
+.hidden {
+  opacity: 0;
+}
+/* .contact-favicons a i:hover{
+  animation-name: active-border;
+  animation-duration: 2s;
+  cursor: pointer;
+    
+    } */
+/* @keyframes sideways {
+  0% {
+    width: 5vw;
+  }
+  50% {
+    width: 50vw;
+  }
+  100% {
+    width: 120vw;
+  }
+} */
+
+
+
 /*languages section*/
 .languages {
   display: flex;
@@ -708,13 +759,7 @@ main {
   border-radius: 10px;
   background-color: white;
 }
-
-/* .languages h3 {
-  color: white;
-  border: 2px solid rgb(246,208,117);
-  padding: 5px 3px;
-  background-color: #fae596;
-} */
+ 
 
 .languages div {
   display: flex;
@@ -936,12 +981,25 @@ button {
   background-color: #fae596;
   color: rgb(117,73,103);
   font-size: 25px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
   border-bottom: 4px solid rgb(246,208,117);
   padding: 10px 35px;
   margin-bottom: 20px;
 }
+.button-change {
+  font-size: 25px;
+  transition: font-size 1s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  outline: 0;
+}
+
 
 
 .contact-favicons {
@@ -951,27 +1009,25 @@ button {
 }
 
 .contact-favicons a i {
-  padding: 20px 20px;
-  margin: 30px 15px;
+  padding: 25px 25px;
+  margin: 30px 25px;
   font-size: 20px;
-  color: black; 
+  color: rgb(83, 80, 78); 
   border-radius: 100%;
   border: 2px solid rgba(113, 189, 172, .8);
-  animation-name: active-border;
-  animation-duration: 2.5s;
-  animation-timing-function: ease-in-out;
+  
+  /* animation-timing-function: ease-in-out; */
 }
-/* favicon animation not working yet
- */
+
 @keyframes active-border {
-  from {border: 4px solid rgba(113, 189, 172);}
-  to {border: 2px solid rgba(white)}
-  to {border: 2px solid rgba(113, 189, 172, .8)}
+  from {border: 2px solid white;}
+  to {border: 2px solid rgb(141,208,169);}
+  to {border: 2px solid rgba(1, 46, 36, 0.8);}
 }
 .contact-favicons a i:hover{
-    animation: active-border;
-    animation-play-state: running;
-    cursor: pointer;
+  animation-name: active-border;
+  animation-duration: 2s;
+  cursor: pointer;
     
     }
 /* end animation */

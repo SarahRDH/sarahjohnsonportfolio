@@ -1,20 +1,23 @@
 const hamburgerIcon = document.querySelector("svg");
 const hamburgerDrop = document.querySelector(".hamburger");
 const closeBtn = document.querySelector(".close");
+const darkOverlay = document.querySelector(".overlay");
 
 function handleMenuClick() {
     hamburgerDrop.style.width = "250px";
-
+    darkOverlay.style.display = "block";
 }
 
 function handleSideNavClose() {
     hamburgerDrop.style.width = "0px";
-
+    darkOverlay.style.display = "none";
 }
 
 hamburgerIcon.addEventListener("mouseover", handleMenuClick);
 closeBtn.addEventListener("click", handleSideNavClose);
 hamburgerDrop.addEventListener("mouseleave", handleSideNavClose);
+
+
 
 
 //does using scrollIntoView for nav benefit this project?
@@ -114,3 +117,30 @@ function showCard(e) {
 //   }
 // }
   
+// (function() {
+//   var elements;
+//   var windowHeight;
+
+//   function init() {
+//     elements = document.querySelectorAll('.hidden');
+//     windowHeight = window.innerHeight;
+//   }
+
+//   function checkPosition() {
+//     for (var i = 0; i < elements.length; i++) {
+//       var element = elements[i];
+//       var positionFromTop = elements[i].getBoundingClientRect().top;
+
+//       if (positionFromTop - windowHeight <= 0) {
+//         element.classList.add('titles');
+//         element.classList.remove('hidden');
+//       }
+//     }
+//   }
+
+//   window.addEventListener('scroll', checkPosition);
+//   window.addEventListener('resize', init);
+
+//   init();
+//   checkPosition();
+// })();
