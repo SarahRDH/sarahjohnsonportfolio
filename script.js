@@ -13,7 +13,7 @@ function handleSideNavClose() {
     darkOverlay.style.display = "none";
 }
 
-hamburgerIcon.addEventListener("mouseover", handleMenuClick);
+hamburgerIcon.addEventListener("click", handleMenuClick);
 closeBtn.addEventListener("click", handleSideNavClose);
 hamburgerDrop.addEventListener("mouseleave", handleSideNavClose);
 
@@ -23,99 +23,63 @@ hamburgerDrop.addEventListener("mouseleave", handleSideNavClose);
 //does using scrollIntoView for nav benefit this project?
 
 //add the sticky nav bar when scrolling past circle section?
-//change text in header to SJ at media query break point 600 and smaller
-// if window.innerWidth < 420 {
-// document.querySelector(".header-text").textContent = "SJ";
-// }
-
-// let originalContent = document.querySelector(".header-text").textContent = "SARAH'S PORTFOLIO";
-
-// $(window).resize(function() {
-// if (window.innerWidth < 420) {
-
-//     document.querySelector(".header-text").textContent = "SJ";
-
-
-// } else if (window.innerWidth > 420) {
-//   document.querySelector(".header-text").textContent = "Sarah's Portfolio";
-   
-// }
-// }).resize();
-
-//add onmouseleave to close side bar
-//add dark overlay when side bar is open
-
 
  //try moving hrs on scroll- maybe with css
 //onmousemove looks fun
 
 
-//hide and show project cards on hover
-//grab each project html
-//grab each project card html or as an array
-//function .cards css and use .className
-//function could enter text into html with this also...use innerText
-//function change .cards to display: block
-//event listener mouseover and toggle on/off .cards
-
-const cardsPopup = document.querySelectorAll(".cards");
+const cardsPopup = document.querySelector(".cards");
 const project = document.querySelectorAll(".project");
+const projectArr = Array.from(project);
+//querySelectorAll is treating .project as a NodeList which should function like and array in the for loop. But I had to convert it to an array for it to work.
+function hideCard(e) {
+  console.log("see ya");
+  cardsPopup.style.display = "none";
+}
 
-
-for (let i = 0; i < project.length; i++) {
-  project[i].addEventListener('mouseover', showCard);
+for (let i = 0; i < projectArr.length; i++) {
+  projectArr[i].addEventListener('mouseenter', showCard);
+  projectArr[i].addEventListener('mouseleave', hideCard);
 }
 function showCard(e) {
   console.log("howdy");
   
-  if (e.target.class === "p1") {
+  if (e.target === projectArr[0]) {
     cardsPopup.style.display = "block";
-    cardsPopup.p.innerText = "Does this work yet?";
-    console.log("Does this work yet?");
+    cardsPopup.innerText = "Does this work yet 1?";
+    console.log("Does this work yet? a");
   
-  } else if (e.target.class === "p2") {
-    cardsPopup.p.innerText = "Does the second one work yet?";
+  } else if (e.target === projectArr[1]) {
+    cardsPopup.innerText = "Does the second one work yet 2?";
   cardsPopup.style.display = "block";
+  console.log("Does this work yet? b");
     
-  }  else if (e.target.class === "p3") {
-    cardsPopup.p.innerText = "Does the third one work yet?";
+  }  else if (e.target === projectArr[2]) {
+    cardsPopup.innerText = "Does the third one work yet 3?";
   cardsPopup.style.display = "block";
+  console.log("Does this work yet? c");
     
-  }  else if (e.target.class === "p4") {
-    cardsPopup.p.innerText = "Does the fourth one work yet?";
+  }  else if (e.target === projectArr[3]) {
+    cardsPopup.innerText = "Does the fourth one work yet 4?";
   cardsPopup.style.display = "block";
+  console.log("Does this work yet? d");
     
-  }  else if (e.target.class === "p5") {
-    cardsPopup.p.innerText = "Does the fifth one work yet?";
+  }  else if (e.target === projectArr[4]) {
+    cardsPopup.innerText = "Does the fifth one work yet 5?";
   cardsPopup.style.display = "block";
+  console.log("Does this work yet? e");
     
-  }  else if (e.target.class === "p6") {
-    cardsPopup.p.innerText = "Does the sixth one work yet?";
+  }  else if (e.target === projectArr[5]) {
+    cardsPopup.innerText = "Does the sixth one work yet 6?";
   cardsPopup.style.display = "block";
+  console.log("Does this work yet? f");
   }
-    
+
 }
 
 
-// projectOne.addEventListener("mouseover", showCard);
-// projectTwo.addEventListener("mouseover", showCard);
-// projectThree.addEventListener("mouseover", showCard);
-// projectFour.addEventListener("mouseover", showCard);
-// projectFive.addEventListener("mouseover", showCard);
-// projectSix.addEventListener("mouseover", showCard);
- 
-// const btns = document.querySelectorAll('.btn');
-// for (let i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener('click', updateText);
-// }
-// function updateText(evt) {
-//   console.log(evt.target);
-//   if (evt.target.id === "one") {
-//     document.querySelector('#btn-text').textContent = "First button clicked!";
-//   } else if (evt.target.id === "two") {
-//     document.querySelector('#btn-text').textContent = "Second button clicked!";
-//   }
-// }
+
+
   
 // (function() {
 //   var elements;
