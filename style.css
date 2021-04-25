@@ -224,7 +224,7 @@ body {
   height: 0.25px;
   background-color: white;
   border-style: outset;
-  animation:  3s linear 1s slidein;
+  /* animation:  3s linear 1s slidein; */
 }
 
 @media only screen and (min-width: 1100px) {
@@ -233,12 +233,12 @@ body {
     transform: rotate(-45deg) translateY(350px) translateX(-300px);
 }
 }
-@keyframes slidein {
+/* @keyframes slidein {
   from {width: 0%;}
   to {width: 50%;}
   to {width: 100%;}
 
-}
+} */
 
 
 .horizontal {
@@ -247,7 +247,7 @@ body {
   height: 0.25px;
   background-color: white;
   border-style: outset;
-  animation:  3s linear 1s slidein;
+  /* animation:  3s linear 1s slidein; */
 }
 /*circle section*/
 
@@ -736,15 +736,15 @@ main {
   width: 0%;
   height: 1px;
   margin-bottom: 40px;
-  animation: line-grow 1.5s ease-in-out alternate;
+  animation: line-grow 1.5s ease-out;
   animation-delay: 3s;
   animation-iteration-count: 3;
 }
 @keyframes line-grow {
-  from {width: 100%; transform: translateX(-800px); background-color: white;}
-  to {width: 60%; transform: translateX(-500px); background-color: white;}
-  to {width: 30%; transform: translateX(-300px); background-color: white;}
-  to {width: 0%; transform: translateX(-200px); background-color: rgba(255,255,255,0.5);}
+  from {width: 0%; transform-origin: left; transform: translateX(-800px); background-color: white;}
+  to {width: 30%; transform: translateX(-500px); background-color: white;}
+  to {width: 100%; transform: translateX(-200px); background-color: white;}
+  to {width: 20%; transform: translateX(-50px); background-color: rgba(255,255,255,0.5);}
 }
 
 .hidden {
@@ -862,12 +862,19 @@ rgb(117,73,103) purple
   padding-top: 7px;
 }
 /* to hide and show with JS */
+/* .cards-container {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+} */
 .cards {
   width: 400px;
   background-color: rgb(216,244,203);
   color: #173e43;
   border-radius: 8px;
   display: none;
+  /* position: absolute; */
+
 }
 
 
