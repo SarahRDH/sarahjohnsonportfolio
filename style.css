@@ -143,6 +143,41 @@ svg {
 }
 /*end hamburger menu*/
 
+/* nav bar experiment, may have to delete */
+@media only screen and (min-width: 990px) {
+  svg {
+      display: none;
+  }
+  .close {
+    display: none;
+  }
+    .hamburger {
+      display: block;
+  }
+  
+  
+  .hamburger ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      list-style: none;  
+    padding-right: 15px;
+  }
+  
+  .hamburger li {
+    padding: 0px 40px;
+  }
+  
+  .hamburger a {
+      color: purple;
+      font-size: 18px;
+      text-decoration: none;
+  }
+  
+  
+  }
+  /*end nav bar media query*/
+
 .headline {
   width: 90vw;
   display: flex;
