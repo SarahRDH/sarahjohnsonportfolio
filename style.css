@@ -104,7 +104,7 @@ header p {
 
 .close {
     position: absolute;
-    top:0;
+    bottom: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -144,7 +144,7 @@ svg {
 /*end hamburger menu*/
 
 /* nav bar experiment, may have to delete */
-@media only screen and (min-width: 990px) {
+/* @media only screen and (min-width: 990px) {
   svg {
       display: none;
   }
@@ -175,7 +175,7 @@ svg {
   }
   
   
-  }
+  } */
   /*end nav bar media query*/
 
 .headline {
@@ -234,12 +234,6 @@ hr {
   height: 2px;
 }
 
-/*this doesnt work fix it later*/
-/* @media only screen and (min-width: 300px) and (max-width: 599px) {
-  .background-art {
-    height: 10800px;
-  }
-} */
 
 
 /*body background image and lines*/
@@ -618,7 +612,7 @@ main {
 .languages-circle h2 {
   text-align: center;
 }
-@media only screen and (min-width: 1224px) {
+/* @media only screen and (min-width: 1224px) {
  
   h1 {
     padding-left: 70px;
@@ -647,7 +641,7 @@ header p {
     font-size: 26px;
     padding-left: 30px;
     color: rgb(117,73,103);
-}
+} */
 /* nav bar for large screens */
 /* .navigation {
    display: flex;
@@ -672,7 +666,11 @@ header p {
     text-decoration: none;
 } */
   /*end nav bar for large screens*/
-  
+/* }  */
+
+
+
+
 .projects-circle {
     background-color: rgb(141,208,169);
     position: absolute;

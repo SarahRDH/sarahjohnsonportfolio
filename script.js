@@ -2,6 +2,10 @@ const hamburgerIcon = document.querySelector("svg");
 const hamburgerDrop = document.querySelector(".hamburger");
 const closeBtn = document.querySelector(".close");
 const darkOverlay = document.querySelector(".overlay");
+const hamburgerLnk = document.querySelectorAll(".hamburger ul li");
+const hamburgerLnkArr = Array.from(hamburgerLnk);
+
+// console.log(hamburgerLnkArr[3]);
 
 function handleMenuClick() {
     hamburgerDrop.style.width = "250px";
@@ -13,18 +17,24 @@ function handleSideNavClose() {
     darkOverlay.style.display = "none";
 }
 
-hamburgerIcon.addEventListener("click", handleMenuClick);
+hamburgerIcon.addEventListener("mouseover", handleMenuClick);
 closeBtn.addEventListener("click", handleSideNavClose);
-hamburgerDrop.addEventListener("mouseleave", handleSideNavClose);
+// hamburgerDrop.addEventListener("mouseleave", handleSideNavClose);
+darkOverlay.addEventListener("mouseenter", handleSideNavClose);
+
+for (let x of hamburgerLnkArr) {
+  addEventListener("click", handleSideNavClose);
+  console.log("function works");
+}
 
 //stop listening for mouse leave at screen size 990 and up
-const mediaQueryList = window.matchMedia("(min-width: 990px)");
+// const mediaQueryList = window.matchMedia("(min-width: 990px)");
 
- mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
+//  mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
 
-   if (mediaQueryList.matches) {
-     mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
-  }
+//    if (mediaQueryList.matches) {
+//      mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
+//   }
 //above may not work right, still working out kinks
 
 
