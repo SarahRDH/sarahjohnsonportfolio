@@ -182,6 +182,7 @@ svg {
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10px;
  
 }
 h1 {
@@ -348,6 +349,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .languages-circle {
     background-color: rgb(126,202,194);
@@ -612,7 +614,7 @@ main {
 .languages-circle h2 {
   text-align: center;
 }
-/* @media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1224px) {
  
   h1 {
     padding-left: 70px;
@@ -624,7 +626,7 @@ main {
   padding-top: 0px;
 } 
   
-  header {
+  /* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -762,7 +764,7 @@ main {
   padding: 20px 0px;
 } */
 
-.titles {
+/* .titles {
   padding-top: 0px;
   background-color: transparent;
   border-style: outset;
@@ -778,11 +780,11 @@ main {
   to {width: 30%; transform: translateX(-500px); background-color: white;}
   to {width: 100%; transform: translateX(-200px); background-color: white;}
   to {width: 20%; transform: translateX(-50px); background-color: rgba(255,255,255,0.5);}
-}
+} */
 
-.hidden {
+/* .hidden {
   opacity: 0;
-}
+} */
 /* .contact-favicons a i:hover{
   animation-name: active-border;
   animation-duration: 2s;
@@ -856,6 +858,19 @@ rgb(117,73,103) purple
  
   
 }
+/* @media only screen and (min-width: 350px) and (max-width: 450px) {
+  
+  .projects h4 {
+    padding: 3px 2px 3px 2px;
+  }
+  .flip-card-back p {
+    padding: 0px 4px;
+    line-height: 1;
+    font-size: 10px;
+    padding: 5px;
+  }  
+} */
+
 @media only screen and (min-width: 990px) {
   .projects {
   display: grid;
@@ -869,7 +884,7 @@ rgb(117,73,103) purple
   display: flex;
   background-color: transparent;
   max-width: 600px;
-  height: 350px;
+  height: 150px;
   perspective: 1000px;
 }
 
@@ -910,23 +925,40 @@ rgb(117,73,103) purple
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
  
 }
+.flip-card-front img {
+  width: 100%;
+  box-sizing: border-box;
+}
 .flip-card-back p {
+  padding: 0px 5px;
+  line-height: 1.4;
+  font-size: 12px;
+  padding: 5px 3px;
+}
+.projects h4 {
+  padding: 5px 2px;
+  font-size: 16px;
+}
+
+.projects a {
+  color:rgba(1, 46, 36, 0.8);
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 450px) {
+  .flip-card-back p {
   padding: 0px 40px;
   line-height: 1.5;
   font-size: 18px;
   padding: 10px 20px;
 }
 
-.flip-card-front img {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-
 .projects h4 {
-  padding: 30px 20px 30px 20px;
+  padding: 30px 20px;
+  font-size: 24px;
 }
 
 .projects a {
@@ -934,6 +966,11 @@ rgb(117,73,103) purple
   padding-top: 20px;
 }
 
+.flip-card {
+  max-width: 600px;
+height: 350px;
+}
+}
 
 
 
@@ -1169,6 +1206,7 @@ button:active {
   from {border: 2px solid white;}
   to {border: 2px solid rgb(141,208,169);}
   to {border: 2px solid rgba(1, 46, 36, 0.8);}
+  to {border: 2px solid rgba(113, 189, 172, .8)}
 }
 .contact-favicons a i:hover{
   animation-name: active-border;
@@ -1192,3 +1230,26 @@ footer p {
   padding-top: 15px;
 }
 
+
+.titles {
+  
+  padding-top: 0px;
+  background-color: transparent;
+  border-style: outset;
+  width: 0%;
+  height: 1px;
+  margin-bottom: 40px;
+  /* animation: line-grow 1.5s ease-out;
+  animation-delay: 3s;
+  animation-iteration-count: 3; */
+}
+/* @keyframes line-grow {
+  from {width: 0%; transform-origin: left; transform: translateX(-800px); background-color: white;}
+  to {width: 30%; transform: translateX(-500px); background-color: white;}
+  to {width: 100%; transform: translateX(-200px); background-color: white;}
+  to {width: 20%; transform: translateX(-50px); background-color: rgba(255,255,255,0.5);}
+}
+
+.hidden {
+  opacity: 0;
+} */

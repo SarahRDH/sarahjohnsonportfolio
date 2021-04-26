@@ -19,12 +19,10 @@ function handleSideNavClose() {
 
 hamburgerIcon.addEventListener("mouseover", handleMenuClick);
 closeBtn.addEventListener("click", handleSideNavClose);
-// hamburgerDrop.addEventListener("mouseleave", handleSideNavClose);
 darkOverlay.addEventListener("mouseenter", handleSideNavClose);
 
 for (let x of hamburgerLnkArr) {
   addEventListener("click", handleSideNavClose);
-  console.log("function works");
 }
 
 //stop listening for mouse leave at screen size 990 and up
