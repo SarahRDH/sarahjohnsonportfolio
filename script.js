@@ -36,55 +36,55 @@ const mediaQueryList = window.matchMedia("(min-width: 990px)");
  //try moving hrs on scroll- maybe with css
 //onmousemove looks fun
 
-
-const cardsPopup = document.querySelector(".cards");
-const project = document.querySelectorAll(".project");
-const projectArr = Array.from(project);
+//the below JS works, I just didn't like the way it looked.
+// const cardsPopup = document.querySelector(".cards");
+// const project = document.querySelectorAll(".project");
+// const projectArr = Array.from(project);
 //querySelectorAll is treating .project as a NodeList which should function like and array in the for loop. But I had to convert it to an array for it to work.
-function hideCard(e) {
-  console.log("see ya");
-  cardsPopup.style.display = "none";
-}
+// function hideCard(e) {
+//   console.log("see ya");
+//   cardsPopup.style.display = "none";
+// }
 
-for (let i = 0; i < projectArr.length; i++) {
-  projectArr[i].addEventListener('mouseenter', showCard);
-  projectArr[i].addEventListener('mouseleave', hideCard);
-}
-function showCard(e) {
-  console.log("howdy");
+// for (let i = 0; i < projectArr.length; i++) {
+//   projectArr[i].addEventListener('mouseenter', showCard);
+//   projectArr[i].addEventListener('mouseleave', hideCard);
+// }
+// function showCard(e) {
+//   console.log("howdy");
   
-  if (e.target === projectArr[0]) {
-    cardsPopup.style.display = "block";
-    cardsPopup.innerText = "Does this work yet 1?";
-    console.log("Does this work yet? a");
+//   if (e.target === projectArr[0]) {
+//     cardsPopup.style.display = "block";
+//     cardsPopup.innerText = "Does this work yet 1?";
+//     console.log("Does this work yet? a");
   
-  } else if (e.target === projectArr[1]) {
-    cardsPopup.innerText = "Does the second one work yet 2?";
-  cardsPopup.style.display = "block";
-  console.log("Does this work yet? b");
+//   } else if (e.target === projectArr[1]) {
+//     cardsPopup.innerText = "Does the second one work yet 2?";
+//   cardsPopup.style.display = "block";
+//   console.log("Does this work yet? b");
     
-  }  else if (e.target === projectArr[2]) {
-    cardsPopup.innerText = "Does the third one work yet 3?";
-  cardsPopup.style.display = "block";
-  console.log("Does this work yet? c");
+//   }  else if (e.target === projectArr[2]) {
+//     cardsPopup.innerText = "Does the third one work yet 3?";
+//   cardsPopup.style.display = "block";
+//   console.log("Does this work yet? c");
     
-  }  else if (e.target === projectArr[3]) {
-    cardsPopup.innerText = "Does the fourth one work yet 4?";
-  cardsPopup.style.display = "block";
-  console.log("Does this work yet? d");
+//   }  else if (e.target === projectArr[3]) {
+//     cardsPopup.innerText = "Does the fourth one work yet 4?";
+//   cardsPopup.style.display = "block";
+//   console.log("Does this work yet? d");
     
-  }  else if (e.target === projectArr[4]) {
-    cardsPopup.innerText = "Does the fifth one work yet 5?";
-  cardsPopup.style.display = "block";
-  console.log("Does this work yet? e");
+//   }  else if (e.target === projectArr[4]) {
+//     cardsPopup.innerText = "Does the fifth one work yet 5?";
+//   cardsPopup.style.display = "block";
+//   console.log("Does this work yet? e");
     
-  }  else if (e.target === projectArr[5]) {
-    cardsPopup.innerText = "Does the sixth one work yet 6?";
-  cardsPopup.style.display = "block";
-  console.log("Does this work yet? f");
-  }
+//   }  else if (e.target === projectArr[5]) {
+//     cardsPopup.innerText = "Does the sixth one work yet 6?";
+//   cardsPopup.style.display = "block";
+//   console.log("Does this work yet? f");
+//   }
 
-}
+// }
 
 
 
