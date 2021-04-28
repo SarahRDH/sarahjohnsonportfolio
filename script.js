@@ -5,7 +5,6 @@ const darkOverlay = document.querySelector(".overlay");
 const hamburgerLnk = document.querySelectorAll(".hamburger ul li");
 const hamburgerLnkArr = Array.from(hamburgerLnk);
 
-// console.log(hamburgerLnkArr[3]);
 
 function handleMenuClick() {
     hamburgerDrop.style.width = "250px";
@@ -25,26 +24,67 @@ for (let x of hamburgerLnkArr) {
   addEventListener("click", handleSideNavClose);
 }
 
-//stop listening for mouse leave at screen size 990 and up
-// const mediaQueryList = window.matchMedia("(min-width: 990px)");
+//playing line animation under titles of each section
+// const lines = document.querySelectorAll(".titles");
+// const linesArr = Array.from(lines);
 
-//  mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
+// function showLines() { 
+//   linesArr[i].style.display = "block";
+//   console.log("showLines function works");
+// }
 
-//    if (mediaQueryList.matches) {
-//      mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
+// function isInViewport(element) {
+//   var rect = element.getBoundingClientRect();
+//   var html = document.documentElement;
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || html.clientHeight) &&
+//     rect.right <= (window.innerWidth || html.clientWidth)
+//   );
+// }
+
+// const doIt = isInViewport(showLines);
+// for (i=0; i < linesArr.length; i++) {
+//   linesArr[i].addEventListener("scroll", isInViewport); 
+//   console.log("listening for scroll");  
+//   showLines();
+// }
+
+// function isInViewport(linesArr) {
+//   var rect = linesArr.getBoundingClientRect();
+//   var html = document.documentElement;
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || html.clientHeight) &&
+//     rect.right <= (window.innerWidth || html.clientWidth)
+//   );
+//   showLines();
+// }
+
+// function isInViewport(e) {
+//   console.log("isInViewport function works");
+//   if (e.target === linesArr[i]) {
+//     console.log("i see first title");
+//    showLines();
 //   }
-//above may not work right, still working out kinks
+// }
+  // else if (e.target === linesArr[1]) {
+  //   console.log("i see second title");
+  //   showLines();
+  // }
 
 
 
-//does using scrollIntoView for nav benefit this project?
 
-//add the sticky nav bar when scrolling past circle section?
+  // grab all the headings
+ // loop over them 
+ // for each one, check if they isInViewport is true for the element
+ // if it's true, trigger animation
+ 
 
- //try moving hrs on scroll- maybe with css
-//onmousemove looks fun
-
-//the below JS works, I just didn't like the way it looked.
+//the below JS works, I just didn't like the way it looked!
 // const cardsPopup = document.querySelector(".cards");
 // const project = document.querySelectorAll(".project");
 // const projectArr = Array.from(project);
@@ -125,3 +165,17 @@ for (let x of hamburgerLnkArr) {
 //   init();
 //   checkPosition();
 // })();
+
+
+
+
+
+//stop listening for mouse leave at screen size 990 and up
+// const mediaQueryList = window.matchMedia("(min-width: 990px)");
+
+//  mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
+
+//    if (mediaQueryList.matches) {
+//      mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
+//   }
+//above may not work right, still working out kinks

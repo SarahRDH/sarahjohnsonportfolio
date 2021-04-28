@@ -124,6 +124,18 @@ header p {
     line-height: 36px;
     text-decoration: none;
 }
+.hamburger a:link {
+  color: white;
+}
+.hamburger a:visited {
+   color: rgba(1, 46, 36, 0.8);
+}
+.hamburger a:hover {
+   color: rgb(117,73,103);
+}
+.hamburger a:active {
+   color: #fae596;
+}
 
 svg {
     padding-right: 30px;
@@ -1155,14 +1167,15 @@ padding: 70px 40px 65px 40px;
   margin-bottom: 30px;
 }
 button {
-  background-color: #fae596;
-  color: rgb(117,73,103);
+  background-image: linear-gradient(rgb(216,244,203), 5%, #71BDAC);
+  color:white;
   font-size: 25px;
   border-radius: 10px;
   border: none;
-  border-bottom: 4px solid rgb(246,208,117);
+  border-bottom: 4px solid teal;
   padding: 10px 35px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .button-change {
   font-size: 25px;
@@ -1230,26 +1243,34 @@ footer p {
   padding-top: 15px;
 }
 
+/*hr animation*/
+.titles-wrapper {
+  position: relative;
+  left:-100px;
+	right:0px;
+  padding-bottom: 40px;
+}
 
 .titles {
-  
+  display: none;
+	position: absolute;
+	left: 0px;
+	width: 0vw;  
   padding-top: 0px;
-  background-color: transparent;
+  background-color: white;
   border-style: outset;
-  width: 0%;
   height: 1px;
   margin-bottom: 40px;
-  /* animation: line-grow 1.5s ease-out;
-  animation-delay: 3s;
-  animation-iteration-count: 3; */
-}
-/* @keyframes line-grow {
-  from {width: 0%; transform-origin: left; transform: translateX(-800px); background-color: white;}
-  to {width: 30%; transform: translateX(-500px); background-color: white;}
-  to {width: 100%; transform: translateX(-200px); background-color: white;}
-  to {width: 20%; transform: translateX(-50px); background-color: rgba(255,255,255,0.5);}
+  animation: thread2 1.3s cubic-bezier(1, 1, 0.8, 0.5);
 }
 
-.hidden {
+@keyframes thread2 {
+  0%   { width: 0vw; height: 1px; }
+  50% { width: 50vw; height: 1px;}
+  80% { width: 100vw; height: 1px;}
+  100%{ left: 100vw; width: 0vw; height: 0px;}
+}
+
+/* .hidden {
   opacity: 0;
 } */
