@@ -1230,26 +1230,34 @@ footer p {
   padding-top: 15px;
 }
 
+/*hr animation*/
+.titles-wrapper {
+  position: relative;
+  left:-100px;
+	right:0px;
+  padding-bottom: 40px;
+}
 
 .titles {
-  
+  display: block;
+	position: absolute;
+	left: 0px;
+	width: 0vw;  
   padding-top: 0px;
-  background-color: transparent;
+  background-color: white;
   border-style: outset;
-  width: 0%;
   height: 1px;
   margin-bottom: 40px;
-  /* animation: line-grow 1.5s ease-out;
-  animation-delay: 3s;
-  animation-iteration-count: 3; */
-}
-/* @keyframes line-grow {
-  from {width: 0%; transform-origin: left; transform: translateX(-800px); background-color: white;}
-  to {width: 30%; transform: translateX(-500px); background-color: white;}
-  to {width: 100%; transform: translateX(-200px); background-color: white;}
-  to {width: 20%; transform: translateX(-50px); background-color: rgba(255,255,255,0.5);}
+  animation: thread2 1.3s cubic-bezier(1, 1, 0.8, 0.5);
 }
 
-.hidden {
+@keyframes thread2 {
+  0%   { width: 0vw; height: 1px; }
+  50% { width: 50vw; height: 1px;}
+  80% { width: 100vw; height: 1px;}
+  100%{ left: 100vw; width: 0vw; height: 0px;}
+}
+
+/* .hidden {
   opacity: 0;
 } */
