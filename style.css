@@ -124,6 +124,18 @@ header p {
     line-height: 36px;
     text-decoration: none;
 }
+.hamburger a:link {
+  color: white;
+}
+.hamburger a:visited {
+   color: rgba(1, 46, 36, 0.8);
+}
+.hamburger a:hover {
+   color: rgb(117,73,103);
+}
+.hamburger a:active {
+   color: #fae596;
+}
 
 svg {
     padding-right: 30px;
@@ -1155,12 +1167,12 @@ padding: 70px 40px 65px 40px;
   margin-bottom: 30px;
 }
 button {
-  background-color: #fae596;
-  color: rgb(117,73,103);
+  background-image: linear-gradient(rgb(216,244,203), 5%, #71BDAC);
+  color:white;
   font-size: 25px;
   border-radius: 10px;
   border: none;
-  border-bottom: 4px solid rgb(246,208,117);
+  border-bottom: 4px solid teal;
   padding: 10px 35px;
   margin-bottom: 20px;
 }
@@ -1239,7 +1251,7 @@ footer p {
 }
 
 .titles {
-  display: block;
+  display: none;
 	position: absolute;
 	left: 0px;
 	width: 0vw;  
