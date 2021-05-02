@@ -127,9 +127,9 @@ header p {
 .hamburger a:link {
   color: white;
 }
-.hamburger a:visited {
+/* .hamburger a:visited {
    color: rgba(1, 46, 36, 0.8);
-}
+} */
 .hamburger a:hover {
    color: rgb(117,73,103);
 }
