@@ -100,15 +100,15 @@ header p {
     transition: 0.5s;
     background-color: #71BDAC;
     padding: 5% 0px;
-  border-left: 2px inset #71BDAC;
+    border-left: 2px inset #71BDAC;
 }
 
 .close {
     position: absolute;
-    bottom: 0;
-    right: 25px;
+    bottom: 120px;
+    left: 20px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 0px;
     color: white;
     text-decoration: none;
 }
@@ -128,9 +128,7 @@ header p {
 .hamburger a:link {
   color: white;
 }
-/* .hamburger a:visited {
-   color: rgba(1, 46, 36, 0.8);
-} */
+
 .hamburger a:hover {
    color: rgb(117,73,103);
 }
@@ -156,40 +154,7 @@ svg {
 }
 /*end hamburger menu*/
 
-/* nav bar experiment, may have to delete */
-/* @media only screen and (min-width: 990px) {
-  svg {
-      display: none;
-  }
-  .close {
-    display: none;
-  }
-    .hamburger {
-      display: block;
-  }
-  
-  
-  .hamburger ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-      list-style: none;  
-    padding-right: 15px;
-  }
-  
-  .hamburger li {
-    padding: 0px 40px;
-  }
-  
-  .hamburger a {
-      color: purple;
-      font-size: 18px;
-      text-decoration: none;
-  }
-  
-  
-  } */
-  /*end nav bar media query*/
+
 
 .headline {
   width: 90vw;
@@ -639,53 +604,7 @@ main {
   padding-top: 0px;
 } 
   
-  /* header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fae596;
-    border-bottom: 3px solid rgb(246,208,117);
-    padding: 0px;
-    margin-top: -10px;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
-
-header p {
-    font-size: 26px;
-    padding-left: 30px;
-    color: rgb(117,73,103);
-} */
-/* nav bar for large screens */
-/* .navigation {
-   display: flex;
-}
-  svg {
-    display: none;
-  }
-
-  .hamburger {
-  display: flex;
-  }
-  
-.hamburger ul {
-    list-style: none;
-    padding-left: 20px;
-  display: flex;
-}
-
-.hamburger a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-} */
-  /*end nav bar for large screens*/
-/* }  */
-
-
-
-
+ 
 .projects-circle {
     background-color: rgb(141,208,169);
     position: absolute;
@@ -767,15 +686,8 @@ main {
   background-image: linear-gradient(180deg, #dddfd4, 1%, rgb(172,162,158), 40%, #173e43); 
     repeat: repeat;
   width: 100%;
-/*   height: 9200px; */
-/*   background-image: linear-gradient(180deg, #173e43, rgb(172,162,158), #dddfd4, rgba(23,62,67,0.8) );
-  repeat: no-repeat;
-  background-size: contain; */
-}
 
-/* h3 {
-  padding: 20px 0px;
-} */
+}
 
 /* .titles {
   padding-top: 0px;
@@ -840,6 +752,7 @@ main {
   border: 10px solid #173e43;
   margin: 20px 0px;
   background-color: #dddfd4;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 /*colors rgb(126,202,194) lt blue
 rgb(113, 189, 172) lt aqua
@@ -871,18 +784,6 @@ rgb(117,73,103) purple
  
   
 }
-/* @media only screen and (min-width: 350px) and (max-width: 450px) {
-  
-  .projects h4 {
-    padding: 3px 2px 3px 2px;
-  }
-  .flip-card-back p {
-    padding: 0px 4px;
-    line-height: 1;
-    font-size: 10px;
-    padding: 5px;
-  }  
-} */
 
 @media only screen and (min-width: 990px) {
   .projects {
@@ -1040,13 +941,13 @@ padding: 30px 40px 60px 30px;
   height: auto;
   border-radius: 100%;
   padding: 20px 0px;
-/*   object-fit: contain; */
 }
 
 .bio hr {
   width: 60%;
   min-width: 130px;
   margin: 0px 20px;
+  border-style: outset;
 }
 
 
@@ -1057,8 +958,6 @@ padding: 30px 40px 60px 30px;
   justify-content: center;
   max-width: 45%;
   min-width: 40%;
-  /* padding-right: 70%;
-  margin-left: 10px; */
 }
 
 .bio-background-2 {
@@ -1114,10 +1013,7 @@ button {
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
-/* .button-change {
-  font-size: 25px;
-  transition: font-size 1s ease-in-out;
-} */
+
 
 button:hover {
   cursor: pointer;
