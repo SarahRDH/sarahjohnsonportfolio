@@ -19,6 +19,7 @@ function handleSideNavClose() {
 hamburgerIcon.addEventListener("mouseover", handleMenuClick);
 closeBtn.addEventListener("click", handleSideNavClose);
 darkOverlay.addEventListener("mouseenter", handleSideNavClose);
+darkOverlay.addEventListener("click", handleSideNavClose);
 
 for (let x of hamburgerLnkArr) {
   addEventListener("click", handleSideNavClose);
