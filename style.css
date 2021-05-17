@@ -105,7 +105,7 @@ header p {
 
 .close {
     position: absolute;
-    bottom: 120px;
+    bottom: 650px;
     left: 20px;
     font-size: 36px;
     margin-left: 0px;
@@ -739,6 +739,7 @@ main {
   padding: 30px 40px 80px 30px;
   border-radius: 10px;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
  
 
@@ -781,6 +782,7 @@ rgb(117,73,103) purple
   padding: 30px 40px 80px 30px;
   border-radius: 10px;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
  
   
 }
@@ -892,6 +894,7 @@ height: 350px;
   padding: 30px 40px 80px 30px;
  background-color: white;  
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
    
 }
 
@@ -917,6 +920,7 @@ height: 350px;
 padding: 30px 40px 60px 30px;
   background-color: white;
   border-radius: 10px;  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 @media only screen and (max-width: 500px) {
@@ -1001,6 +1005,7 @@ padding: 70px 40px 65px 40px;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 button {
   background-color: #fae596;
