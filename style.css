@@ -111,6 +111,7 @@ header p {
     margin-left: 0px;
     color: white;
     text-decoration: none;
+    display: none;
 }
 
 .hamburger ul {
