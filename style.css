@@ -842,7 +842,7 @@ rgb(117,73,103) purple
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .flip-card-front img {
@@ -893,14 +893,13 @@ height: 350px;
 /*education section*/
 .education {
   padding: 30px 40px 80px 30px;
- background-color: white;  
+  background-color: white;  
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-   
 }
 
 .education div {
-  padding: 20px 0px;
+  padding: 20px 20px;
  
 }
 
@@ -911,8 +910,14 @@ height: 350px;
 .education p:nth-child(3) {
   color: rgb(117,73,103);
   font-style: italic;
-  font-weight: 600;
-  
+  font-weight: 600; 
+}
+
+.edu {
+  border: 1px solid lightgray;
+  margin: 30px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 
@@ -948,6 +953,14 @@ padding: 30px 40px 60px 30px;
   padding: 20px 0px;
 }
 
+/* safari fix for distorted image stretch */
+/* #pic2 {
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  max-height: 275px;
+} */
+
 .bio hr {
   width: 60%;
   min-width: 130px;
@@ -969,7 +982,7 @@ padding: 30px 40px 60px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   max-width: 50%;
   min-width: 40%;
   }
@@ -986,6 +999,13 @@ padding: 30px 40px 60px 30px;
   min-width: 40%;
   margin-right: 10px;
 }
+/*safari fix*/
+/* #pic2 {
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  max-height: 175px;
+} */
 }
 
 aside {
