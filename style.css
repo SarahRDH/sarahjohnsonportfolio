@@ -750,7 +750,7 @@ main {
     40%,
     #173e43
   );
-  repeat: repeat;
+  background-repeat: repeat;
   width: 100%;
 }
 
