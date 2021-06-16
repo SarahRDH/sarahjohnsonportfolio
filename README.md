@@ -4,3 +4,5 @@ I used a mobile first approach for responsiveness and designed the DOM for acces
 Refactoring in progress.
 
 ![portfolio_demo_1 (1)](https://user-images.githubusercontent.com/68091330/122273795-b0b4fe80-ce96-11eb-88fb-6c56f1e1e63d.gif)
+
+![portfolio_demo_3 (1)](https://user-images.githubusercontent.com/68091330/122274844-dee70e00-ce97-11eb-99d2-25064bf0faf6.gif)
