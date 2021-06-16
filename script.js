@@ -168,15 +168,3 @@ for (let x of hamburgerLnkArr) {
 // })();
 
 
-
-
-
-//stop listening for mouse leave at screen size 990 and up
-// const mediaQueryList = window.matchMedia("(min-width: 990px)");
-
-//  mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
-
-//    if (mediaQueryList.matches) {
-//      mediaQueryList.removeEventListener("mouseleave", handleSideNavClose);
-//   }
-//above may not work right, still working out kinks
