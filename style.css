@@ -820,7 +820,7 @@ main {
 }
 
 .languages div:hover {
-  background-color: rgb(216,244,203);
+  background-color: rgba(126, 202, 194, 0.5);
 }
 
 
