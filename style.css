@@ -754,6 +754,7 @@ main {
   width: 100%;
 }
 
+/* This is animation for the section titles. Leaving it here for later if I decide I like it. */
 /* .titles {
   padding-top: 0px;
   background-color: transparent;
@@ -817,6 +818,12 @@ main {
   background-color: #dddfd4;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+.languages div:hover {
+  background-color: rgb(216,244,203);
+}
+
+
 /*colors rgb(126,202,194) lt blue
 rgb(113, 189, 172) lt aqua
 rgb(246,208,117) dk yellow
