@@ -28,16 +28,34 @@ for (let x of hamburgerLnkArr) {
 // ----------slick slider jQuery-------------
 $('#slider').slick({
     dots: false,
-  //fade: true,
- // autoplay: true,
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1800,
-    // centerPadding: 40,
-    // centerMode: true,
     swipe: true,
+    centerPadding: 40,
+    centerMode: true,
+    // fade: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          fade: true,
+        }
+      },
+    ]
 })
 
 
