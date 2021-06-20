@@ -990,6 +990,72 @@ rgb(117,73,103) purple
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
+.bio p {
+  padding-bottom: 20px;
+}
+
+/* --------slick slider-----------  */
+#slider {
+  max-width: 90%;
+  height: 35vh;
+  margin: 0 auto;
+  padding-top: 20px;
+  /* background-color: pink; */
+}
+
+#slider .slides {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding:0 20px;
+  /* background-color: blue; */
+}
+
+#slider .slide {
+  /* float: left; */
+  list-style-type: none;
+  width: 25vw;
+  height: 30vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* border: 5px solid green; */
+  /* box-sizing: border-box; */
+/*   margin: 0; */
+}
+
+#slider .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  object-fit: cover;
+  /* border: 3px solid yellow; */
+}
+
+.slick-center {
+  -moz-transform:scale(1.20);
+  -ms-transform:scale(1.20);
+  -o-transform:scale(1.20);
+  -webkit-transform:scale(1.20);
+  /* color:#e67e22; */
+  opacity:1;
+  transform:scale(1.20);
+}
+
+.slick-prev:before {
+/*   content: "<"; */
+  color: black !important;
+  font-size: 30px;
+}
+
+.slick-next:before {
+/*   content: ">"; */
+  color: black !important;
+  font-size: 30px;
+}
+
+/* ------------old version of bio section---------------- */
+/* 
 @media only screen and (max-width: 500px) {
   .bio {
     display: flex;
@@ -1011,7 +1077,7 @@ rgb(117,73,103) purple
   height: auto;
   border-radius: 100%;
   padding: 20px 0px;
-}
+} */
 
 /* safari fix for distorted image stretch */
 /* #pic2 {
@@ -1021,7 +1087,7 @@ rgb(117,73,103) purple
   max-height: 275px;
 } */
 
-.bio hr {
+/* .bio hr {
   width: 60%;
   min-width: 130px;
   margin: 0px 20px;
@@ -1044,9 +1110,9 @@ rgb(117,73,103) purple
   align-items: center;
   max-width: 50%;
   min-width: 40%;
-}
+} */
 
-@media only screen and (min-width: 501px) {
+/* @media only screen and (min-width: 501px) {
   .bio-background-2 {
     display: flex;
     flex-direction: column;
@@ -1057,7 +1123,7 @@ rgb(117,73,103) purple
     padding-right: 10px;
     min-width: 40%;
     margin-right: 10px;
-  }
+  } */
   /*safari fix*/
   /* #pic2 {
   display: flex;
@@ -1065,14 +1131,14 @@ rgb(117,73,103) purple
   width: auto;
   max-height: 175px;
 } */
-}
+/* }
 
 aside {
   color: rgb(23, 62, 67);
   font-style: italic;
   font-family: "Kalam", cursive;
   font-size: 20px;
-}
+} */
 
 /*hire section*/
 
