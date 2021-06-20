@@ -25,6 +25,40 @@ for (let x of hamburgerLnkArr) {
   addEventListener("click", handleSideNavClose);
 }
 
+// ----------slick slider jQuery-------------
+$('#slider').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    swipe: true,
+    centerPadding: 40,
+    centerMode: true,
+    // fade: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          fade: true,
+        }
+      },
+    ]
+})
+
+
 //playing line animation under titles of each section
 // const lines = document.querySelectorAll(".titles");
 // const linesArr = Array.from(lines);

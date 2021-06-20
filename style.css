@@ -276,7 +276,7 @@ hr {
   height: 2px;
 }
 
-/*body background image and lines*/
+/*--------------body background image and lines-------------------*/
 body {
   background-image: linear-gradient(
     15deg,
@@ -322,7 +322,7 @@ body {
   border-style: outset;
   /* animation:  3s linear 1s slidein; */
 }
-/*circle section*/
+/*-----------------circle section--------------------*/
 
 main {
   padding-top: 110px;
@@ -408,7 +408,6 @@ main {
   align-self: flex-end;
 }
 
-/* } */
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   body {
@@ -737,7 +736,7 @@ main {
   text-align: center;
 }
 
-/* begin main */
+/* ---------------begin main -------------------*/
 main {
   margin-top: 700px;
 }
@@ -794,7 +793,7 @@ main {
   }
 } */
 
-/*languages section*/
+/*--------------languages section-----------------*/
 .languages {
   display: flex;
   flex-wrap: wrap;
@@ -820,7 +819,7 @@ main {
 }
 
 .languages div:hover {
-  background-color: rgb(216,244,203);
+  background-color: rgba(126, 202, 194, 0.5);
 }
 
 
@@ -841,7 +840,7 @@ rgb(117,73,103) purple
   font-size: 25px;
 }
 
-/*projects section*/
+/*---------------projects section-----------------*/
 .projects {
   display: grid;
   grid-template-columns: 1fr;
@@ -906,7 +905,6 @@ rgb(117,73,103) purple
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* overflow-y: scroll; */
 }
 
 .flip-card-front img {
@@ -954,7 +952,7 @@ rgb(117,73,103) purple
   }
 }
 
-/*education section*/
+/*-----------education section---------------------*/
 .education {
   padding: 30px 40px 80px 30px;
   background-color: white;
@@ -982,7 +980,7 @@ rgb(117,73,103) purple
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*bio section*/
+/*---------------bio section----------------*/
 .bio {
   padding: 30px 40px 60px 30px;
   background-color: white;
@@ -990,6 +988,65 @@ rgb(117,73,103) purple
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
+.bio p {
+  padding-bottom: 20px;
+}
+
+/* --------slick slider-----------  */
+#slider {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#slider .slides {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#slider .slide {
+  list-style-type: none;
+  width: 25vw;
+  height: 30vh;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.slick-prev:before {
+  color: black !important;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  color: black !important;
+  font-size: 30px;
+}
+
+
+/* ---------for centerMode slider feature------------ */
+/* .slick-center {
+  -moz-transform:scale(1.50);
+  -ms-transform:scale(1.50);
+  -o-transform:scale(1.50);
+  -webkit-transform:scale(1.50);
+  color:#e67e22;
+  opacity:1;
+  transform:scale(1.50);
+} */
+
+
+/* ------------old version of bio section---------------- */
+/* 
 @media only screen and (max-width: 500px) {
   .bio {
     display: flex;
@@ -1011,7 +1068,7 @@ rgb(117,73,103) purple
   height: auto;
   border-radius: 100%;
   padding: 20px 0px;
-}
+} */
 
 /* safari fix for distorted image stretch */
 /* #pic2 {
@@ -1021,7 +1078,7 @@ rgb(117,73,103) purple
   max-height: 275px;
 } */
 
-.bio hr {
+/* .bio hr {
   width: 60%;
   min-width: 130px;
   margin: 0px 20px;
@@ -1044,9 +1101,9 @@ rgb(117,73,103) purple
   align-items: center;
   max-width: 50%;
   min-width: 40%;
-}
+} */
 
-@media only screen and (min-width: 501px) {
+/* @media only screen and (min-width: 501px) {
   .bio-background-2 {
     display: flex;
     flex-direction: column;
@@ -1057,7 +1114,7 @@ rgb(117,73,103) purple
     padding-right: 10px;
     min-width: 40%;
     margin-right: 10px;
-  }
+  } */
   /*safari fix*/
   /* #pic2 {
   display: flex;
@@ -1065,16 +1122,16 @@ rgb(117,73,103) purple
   width: auto;
   max-height: 175px;
 } */
-}
+/* }
 
 aside {
   color: rgb(23, 62, 67);
   font-style: italic;
   font-family: "Kalam", cursive;
   font-size: 20px;
-}
+} */
 
-/*hire section*/
+/*--------------hire section-------------------*/
 
 .hire {
   padding: 70px 40px 65px 40px;
