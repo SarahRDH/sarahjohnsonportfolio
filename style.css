@@ -947,13 +947,14 @@ rgb(117,73,103) purple
   padding: 30px 40px 80px 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  background-image: url("https://www.dropbox.com/s/1xbgaw60v8hbfng/B096FB00-AFA5-4D57-9BD7-EB7CFC7053E6_1_201_a.jpeg?raw=1");
+  background-color: white;
+  /* background-image: url("https://www.dropbox.com/s/1xbgaw60v8hbfng/B096FB00-AFA5-4D57-9BD7-EB7CFC7053E6_1_201_a.jpeg?raw=1");
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
   overflow-x: hidden;
   background-attachment: fixed;
-  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7);
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7); */
 }
 
 .edu {
@@ -979,6 +980,10 @@ rgb(117,73,103) purple
 }
 
 .edu-block-3 p:nth-child(2), .edu-block-11 p:nth-child(2) {
+  line-height: 1.5;
+}
+
+.edu-block-4 p:nth-child(2) {
   line-height: 1.5;
 }
 
@@ -1101,6 +1106,8 @@ button {
 
 button:hover {
   cursor: pointer;
+  color: white;
+  background-color: rgb(246, 208, 117);
 }
 
 button:active {
