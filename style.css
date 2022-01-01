@@ -979,7 +979,15 @@ rgb(117,73,103) purple
   line-height: 1.5;
 }
 
+.edu-block-3 p:nth-child(2), .edu-block-10 p:nth-child(2) {
+  line-height: 1.5;
+}
+
 .edu-block-3 p:nth-child(2), .edu-block-11 p:nth-child(2) {
+  line-height: 1.5;
+}
+
+.edu-block-3 p:nth-child(2), .edu-block-12 p:nth-child(2) {
   line-height: 1.5;
 }
 
@@ -1036,6 +1044,7 @@ rgb(117,73,103) purple
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
+
 @media only screen and (max-width: 762px) {
   #slider .slide img {
     width: 120%;
@@ -1074,10 +1083,8 @@ button .slick-prev, .slick-arrow {
   color:#e67e22;
   opacity:1;
   transform:scale(1.50);
+  height: 100%;
 } */
-
-
-
 
 /*--------------hire section-------------------*/
 
