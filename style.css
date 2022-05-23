@@ -127,6 +127,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:active {
+  outline: none;
+}
 /* begin custom css */
 
 html {
@@ -513,7 +516,6 @@ main {
     align-items: center;
     justify-content: center;
   }
-
   .hire-me-circle {
     background-color: #3fb0ac;
     position: absolute;
@@ -1131,13 +1133,12 @@ button:active {
 }
 
 .contact-favicons a i {
-  padding: 25px 25px;
+  padding: 15px;
   margin: 30px 100px;
   font-size: 25px;
   color: rgb(83, 80, 78);
   border-radius: 100%;
   border: 2px solid rgba(113, 189, 172, 0.8);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .tooltip {
@@ -1203,7 +1204,7 @@ button:active {
     border: 2px solid rgba(1, 46, 36, 0.8);
   }
   to {
-    border: 2px solid rgba(113, 189, 172, 0.8);
+    border: 2px solid rgb(117, 73, 103);
   }
 }
 .contact-favicons a i:hover {
