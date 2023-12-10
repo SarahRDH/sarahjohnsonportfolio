@@ -157,7 +157,6 @@ p {
 h1 {
   color: white;
   font-size: 42px;
-  z-index: 1;
   font-family: "Moderna", sans-serif;
 }
 @media (max-width: 768px) {
@@ -257,7 +256,7 @@ body header .hamburger {
   overflow-x: hidden;
   padding-top: 50px;
   transition: 0.5s;
-  background-color: #71BDAC;
+  background-color: #173e43;
   padding: 5% 0px;
 }
 body header .hamburger ul {
@@ -277,7 +276,7 @@ body header .hamburger a:link {
   color: white;
 }
 body header .hamburger a:hover {
-  color: rgb(117, 73, 103);
+  color: #fae596;
 }
 body header .hamburger a:active {
   color: #fae596;
@@ -506,14 +505,21 @@ body .circles .languages-circle {
 }
 
 /* ---------------begin main -------------------*/
-main .languages-wrapper .languages {
+main .skills-experience-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+main .skills-experience-wrap .languages-wrapper {
+  width: calc(50% - 40px);
+}
+main .skills-experience-wrap .languages-wrapper .languages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: white;
 }
-main .languages-wrapper .languages div {
+main .skills-experience-wrap .languages-wrapper .languages div {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -525,16 +531,19 @@ main .languages-wrapper .languages div {
   background-color: #dddfd4;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-main .languages-wrapper .languages div:hover {
+main .skills-experience-wrap .languages-wrapper .languages div:hover {
   background-color: #173e43;
   color: white;
 }
-main .languages-wrapper .languages div:hover h3 {
+main .skills-experience-wrap .languages-wrapper .languages div:hover h3 {
   color: white;
 }
-main .languages-wrapper .languages div i {
+main .skills-experience-wrap .languages-wrapper .languages div i {
   padding: 0px 20px 0px 0px;
   font-size: 25px;
+}
+main .skills-experience-wrap .experience-wrapper {
+  width: calc(50% - 40px);
 }
 main .projects-wrapper .projects {
   display: grid;
